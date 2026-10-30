@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "edgardo-skills",
+  "description": "Personal Claude Code plugins of Edgardo Acosta.",
+  "owner": { "name": "Edgardo Acosta" },
+  "plugins": [
+    {
+      "name": "ef-manufacturing",
+      "source": "./plugins/ef-manufacturing",
+      "description": "Playbooks, scripts and the UI checklist agent for the EnviaFlores Manufacturing migration.",
+      "category": "development",
+      "keywords": ["enviaflores", "manufacturing"]
+    }
+  ]
+}
