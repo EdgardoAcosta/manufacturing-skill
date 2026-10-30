@@ -1,6 +1,6 @@
 ---
 name: manufacturing
-version: 1.0.0
+version: 1.0.1
 description: EnviaFlores Manufacturing migration context and playbooks. Use for anything about the manufacturing team or its GitHub project 59 - creating or filling Epic/Story/Task/Bug issues, researching legacy screens (talleres, suministros, OPS, admin-api), Grafana/Loki/Tempo telemetry for ef-manufacturing or the app backend, checking what each dev (Jorge, Julio, Guillermo, Dali) is working on or whether they have tasks, assigning QA, reading the Notion migration databases or the Obsidian manufacturing notes, and reviewing/testing teammates' PRs, and shipping (commit/PR, core-pkg release, host composer bump, permissions).
 ---
 
@@ -22,6 +22,7 @@ Roster, test boundaries and repo map are in `~/repository/enviaflores/CLAUDE.md`
 | CBQ brokers and daemons in the dev container (redis, sqs/elasticmq, ordered event commands), never prod | `cbq.md` |
 
 ## Always
+- GitHub scripts (`dev-status.sh`, `new-issue.sh`, `bump.sh`) run as the work account `EdgardoAcostaEF` whatever `gh` account is active: prefix each call with `GH_TOKEN=$(gh auth token --user EdgardoAcostaEF)`. The scripts know nothing about accounts.
 - Spanish for issue bodies, Notion and team-facing text.
 - No code comments by default, config files included. Add one only when the code is not self-explanatory or encodes a business rule, then one line, always in English. No block headers, no "why we chose this" (that goes in the commit/PR).
 - Preview anything outward (issue, Notion row, Grafana rule) and wait for an explicit yes. Never post GitHub comments; status notes go to Obsidian.

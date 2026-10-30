@@ -26,7 +26,7 @@ Other logins seen on project 59 with no confirmed name or role yet: EmilioDinen,
 - Notion field "QA User" takes an @mention (format in `notion.md`). Show the distribution before writing.
 
 ## Dev status
-`scripts/dev-status.sh [login ...]` (path relative to this skill's base directory)
+`GH_TOKEN=$(gh auth token --user EdgardoAcostaEF) scripts/dev-status.sh [login ...]` (path relative to this skill's base directory)
 - Pulls all project 59 items (cached 10 min in `$TMPDIR/mfg-project59-items.json`, `REFRESH=1` forces).
 - Per dev: count of active items by Status, flag `NO In Progress`, then each item `status | sprint | repo#n | updated | title`, newest first.
 - Active = Definition, Backlog, In Progress, Hold, PR Ready/In review/Approved, Ready for Demo/test, Staging, QA Testing, Rejected by QA.

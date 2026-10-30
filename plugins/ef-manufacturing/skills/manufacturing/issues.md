@@ -32,7 +32,7 @@ Task and Bug bodies start with `Historia padre: #<n>`.
 Preview title + body + fields in chat, always in Spanish: paste the actual Spanish text, never an English summary. Wait for yes, then:
 
 ```bash
-scripts/new-issue.sh \
+GH_TOKEN=$(gh auth token --user EdgardoAcostaEF) scripts/new-issue.sh \
   --title "MFG | Recibo de material | ..." --body-file body.md --type Task \
   --parent 122 --assignee EdgardoAcostaEF --project "Recibo de material" \
   --status Definition --sprint "Sprint 22 - 2026" [--label Story] [--dry-run]
