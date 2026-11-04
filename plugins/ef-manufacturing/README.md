@@ -4,7 +4,7 @@ Skills, scripts and one agent for the EnviaFlores Manufacturing migration work.
 
 | Item | Kind | Use |
 |---|---|---|
-| `manufacturing` | skill | Team, board 59, issues, legacy research, Grafana, Notion, Obsidian, review and QA, releases, CBQ. Scripts `dev-status.sh`, `new-issue.sh`, templates. |
+| `manufacturing` | skill | Team, board 59, issues, legacy research, Grafana, Notion, Obsidian, review and QA, releases, CBQ, workshop print servers and ZPL labels. Scripts `dev-status.sh`, `new-issue.sh`, `labeler-test.sh`, templates. |
 | `bump-core-pkg` | skill | Bump manufacturing-core-pkg in the host and push main. Script `bump.sh`. |
 | `uxmaltech-boui` | skill | AdminLTE to BOUI migration conventions. |
 | `legacy-pr-ui-review` | skill | Review and Playwright-test a legacy-port PR or local change. |

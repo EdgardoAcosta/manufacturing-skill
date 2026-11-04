@@ -1,7 +1,7 @@
 ---
 name: manufacturing
-version: 1.0.1
-description: EnviaFlores Manufacturing migration context and playbooks. Use for anything about the manufacturing team or its GitHub project 59 - creating or filling Epic/Story/Task/Bug issues, researching legacy screens (talleres, suministros, OPS, admin-api), Grafana/Loki/Tempo telemetry for ef-manufacturing or the app backend, checking what each dev (Jorge, Julio, Guillermo, Dali) is working on or whether they have tasks, assigning QA, reading the Notion migration databases or the Obsidian manufacturing notes, and reviewing/testing teammates' PRs, and shipping (commit/PR, core-pkg release, host composer bump, permissions).
+version: 1.0.2
+description: EnviaFlores Manufacturing migration context and playbooks. Use for anything about the manufacturing team or its GitHub project 59 - creating or filling Epic/Story/Task/Bug issues, researching legacy screens (talleres, suministros, OPS, admin-api), Grafana/Loki/Tempo telemetry for ef-manufacturing or the app backend, checking what each dev (Jorge, Julio, Guillermo, Dali) is working on or whether they have tasks, assigning QA, reading the Notion migration databases or the Obsidian manufacturing notes, reviewing/testing teammates' PRs, shipping (commit/PR, core-pkg release, host composer bump, permissions), and the workshop print servers (workshop-daemon, labeler, Zebra/CUPS queues, ZPL label templates, etiquetas QR, print server deploys and "users can't print" diagnosis).
 ---
 
 # Manufacturing
@@ -20,6 +20,8 @@ Roster, test boundaries and repo map are in `~/repository/enviaflores/CLAUDE.md`
 | Review or test a teammate's PR, work a QA bug | `review-and-qa.md` |
 | Commit/PR, core-pkg release + host bump, permissions for new screens | `releases.md` |
 | CBQ brokers and daemons in the dev container (redis, sqs/elasticmq, ordered event commands), never prod | `cbq.md` |
+| Workshop print servers: workshop-daemon code and server layout, labeler API, how the app finds the server, deploy, new Zebra queue, "can't print" diagnosis | `print-server.md` + `scripts/labeler-test.sh` |
+| ZPL label templates: Labelary previews, measuring, dpi scaling, QR and font sizes | `labels.md` |
 
 ## Always
 - GitHub scripts (`dev-status.sh`, `new-issue.sh`, `bump.sh`) run as the work account `EdgardoAcostaEF` whatever `gh` account is active: prefix each call with `GH_TOKEN=$(gh auth token --user EdgardoAcostaEF)`. The scripts know nothing about accounts.

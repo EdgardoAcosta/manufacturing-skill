@@ -1,8 +1,23 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "ef-manufacturing",
-  "version": "1.0.1",
-  "description": "Personal Claude Code playbooks for the EnviaFlores Manufacturing migration: team and board, issue creation, legacy research, Grafana telemetry, Notion and Obsidian, PR review and QA, releases and the core-pkg bump, CBQ daemons, BOUI conventions, the CBQ concurrency test and the UI checklist agent.",
-  "author": { "name": "Edgardo Acosta" },
-  "keywords": ["enviaflores", "manufacturing", "laravel", "boui", "cbq", "grafana", "notion", "obsidian"]
+  "version": "1.0.2",
+  "description": "Personal Claude Code playbooks for the EnviaFlores Manufacturing migration: team and board, issue creation, legacy research, Grafana telemetry, Notion and Obsidian, PR review and QA, releases and the core-pkg bump, CBQ daemons, workshop print servers and ZPL labels, BOUI conventions, the CBQ concurrency test and the UI checklist agent.",
+  "author": {
+    "name": "Edgardo Acosta"
+  },
+  "keywords": [
+    "enviaflores",
+    "manufacturing",
+    "laravel",
+    "boui",
+    "cbq",
+    "grafana",
+    "notion",
+    "obsidian",
+    "print-server",
+    "zebra",
+    "cups",
+    "zpl"
+  ]
 }

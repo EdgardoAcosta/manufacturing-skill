@@ -38,5 +38,8 @@ BackEnd `edfxb8z` · Admin `edbw9w4` (Prom span_metrics, v6) · SLA `sla-manufac
 - Prod baselines (2026-09-30, 14d): admin 5xx ~1.2 % of ~9.7k req, ALB p95 hourly median 0.41 s, Loki ERROR 3-33/day.
 - The 4 Loki-backed MFG-APP rules (5xx burst, login failing, bearer rejected, session-expired loop) carry `| app_debug!="true"` since 2026-10-27: QA/dev debug builds can be compiled with `ENVIRONMENT=production` against prod OPS and used to page. Workshop is deliberately NOT filtered. The 3 Prometheus spanmetrics rules cannot filter env or debug (no such labels).
 
+## Print servers
+Metrics, Loki selector and dashboard of the workshop print servers: `print-server.md` Telemetry.
+
 ## Staging incidents
 Staging ships Tempo + Loki as `ef-manufacturing-staging`, but `deployment.environment.name` was `production` until the OTEL_DEPLOYMENT_ENVIRONMENT fix (uxmaltech/core >= 1.2.0). Verify the host header before trusting a "staging" panel.
